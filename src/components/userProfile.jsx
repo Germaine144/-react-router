@@ -12,7 +12,7 @@ function UserProfiles() {
       try {
         const response = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`);
         if (!response.ok) {
-          throw new Error("User not found");
+          throw new Error("User Credential  not found");
         }
         const data = await response.json();
         setUser(data);
